@@ -14,7 +14,9 @@
       <p>Текст</p>
   </li>
 */
+import localStorageApi from './js/local-storage-api';
 import refs from './js/refs';
-import { handleAddTask } from './js/tasks';
-// import { handleAddTask } from './js/tasks';
+import { handleAddTask, handleDeleteTask } from './js/tasks';
+localStorageApi.initTasks();
 refs.form.addEventListener('submit', handleAddTask);
+refs.taskList.addEventListener('click', handleDeleteTask);
