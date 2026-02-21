@@ -18,4 +18,19 @@ function deleteTask(id) {
   const updatedList = listTask.filter(task => task.id !== id);
   localStorage.setItem('TASKS', JSON.stringify(updatedList));
 }
-export default { saveTask, getTasks, initTasks, deleteTask };
+
+function saveTheme(theme) {
+  localStorage.setItem('THEME', theme);
+}
+function getTheme() {
+  return localStorage.getItem('THEME');
+}
+
+export default {
+  saveTask,
+  getTasks,
+  initTasks,
+  deleteTask,
+  saveTheme,
+  getTheme,
+};
