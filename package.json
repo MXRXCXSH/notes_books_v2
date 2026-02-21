@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vite build --base=/notes_books_v2/",
-    "preview": "vite preview --open"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "glob": "^11.0.0",
